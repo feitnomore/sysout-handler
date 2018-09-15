@@ -35,10 +35,10 @@ git clone https://github.com/feitnomore/sysout-handler.git
 ### Make your changes
 
 1. **Container Names**  
-The application will look for the first container on the `POD` that doesn't match `istio-proxy` or `sysout-handler` (ourselves). If you have more containers that you want to ignore, you should adjust your code in the `kubeclient` on `getContainerName`.
+The application will look for the first container on the `POD` that doesn't match `istio-proxy` or `sysout-handler` (ourselves). If you have more containers that you want to ignore, you should adjust your code in the `helpers/kubeclient.py` on `getContainerName`.
 
 2. **Handling Logic**  
-This code will only print the lines it reads. The handling of the line, and actual actions needs to be coded. For example, I have a code here that parses the lines and send them to a Kafka Queue. This handling would have to be called from `kubeclient` on `readSysout`.
+This code will only print the lines it reads. The handling of the line, and actual actions needs to be coded. For example, I have a code here that parses the lines and send them to a Kafka Queue. This handling would have to be called from `helpers/kubeclient.py` on `readSysout`.
 
 3. **Environment**  
 I encourage you to read all the configuration from the environment. We are already doing it for the `POD` name, and `POD` namespace. So, for example, if you plan on sending data to a Kafka Topic, add some environment variables on the YAML of the Sidecar (see examples) for the `server`, `port` and `topic`. After that, make sure you read on the sysout-handler.
