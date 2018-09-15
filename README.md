@@ -68,7 +68,7 @@ Add the sidecar to your POD:
       serviceAccountName: sysout-handler
       restartPolicy: Always
 ```
-*Note:* Remember to set the `image` to the repository you used in the last step.
+*Note:* Remember to set the `image` to the repository you used in the last step.  
 *Note:* Remember this will only work in `test` namespace.
 
 
