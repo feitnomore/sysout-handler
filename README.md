@@ -10,7 +10,9 @@ This is a hack to implement a sidecar container that will run within a POD in [K
 ## INTRODUCTION
 
 The idea here is to be able to read the sysout of the application running on the POD and process the output in any sort of method. The application would log everything that it has on the standard output/standard error, and the sidecar would read its logs and process it, for example, pushing it to a Logstash or to a Kafka Topic.  
-This approach would be interesting because it would allow the application to use any library it wants and any technology it wants, as far as it outputs the information to standard out/standard error, this way, you would not need to enforce any library usage or any technology usage by the application.
+This approach would be interesting because it would allow the application to use any library it wants and any technology it wants, as far as it outputs the information to standard out/standard error, this way, you would not need to enforce any library usage or any technology usage by the application.  
+
+*Note:* Don't think only about logging, but imagine you can use it for event handling as well.
 
 ## RBAC
 
