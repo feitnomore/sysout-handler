@@ -80,5 +80,5 @@ Add the sidecar to your POD:
 
 ## DOCUMENTATION
 
-1. [Examples](https://github.com/feitnomore/kubernetes-lb-controller/tree/master/examples)
+1. [Examples](https://github.com/feitnomore/sysout-handler/tree/master/examples)
 
