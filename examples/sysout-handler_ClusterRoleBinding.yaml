@@ -1,12 +1,12 @@
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
-  name: log-handler 
+  name: sysout-handler 
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: log-handler 
+  name: sysout-handler 
 subjects:
 - kind: ServiceAccount
-  name: log-handler 
+  name: sysout-handler 
   namespace: test 
