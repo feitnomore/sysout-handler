@@ -11,4 +11,3 @@
                 fieldRef:
                   fieldPath: metadata.namespace
       serviceAccountName: sysout-handler
-      restartPolicy: Always
