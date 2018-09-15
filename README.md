@@ -22,6 +22,9 @@ $ kubectl apply -f https://raw.githubusercontent.com/feitnomore/sysout-handler/m
 $ kubectl apply -f https://raw.githubusercontent.com/feitnomore/sysout-handler/master/examples/sysout-handler_ClusterRoleBinding.yaml
 ```
 
+*Note:* The ServiceAccount will be created in `test` namespace.
+
+
 ## HOW TO BUILD IT
 
 ### Clone the Repository
@@ -66,6 +69,7 @@ Add the sidecar to your POD:
       restartPolicy: Always
 ```
 *Note:* Remember to set the `image` to the repository you used in the last step.
+*Note:* Remember this will only work in `test` namespace.
 
 
 ## REFERENCES AND IDEAS
