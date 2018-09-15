@@ -41,7 +41,7 @@ The application will look for the first container on the `POD` that doesn't matc
 This code will only print the lines it reads. The handling of the line, and actual actions needs to be coded. For example, I have a code here that parses the lines and send them to a Kafka Queue. This handling would have to be called from `helpers/kubeclient.py` on `readSysout`.
 
 3. **Environment**  
-I encourage you to read all the configuration from the environment. We are already doing it for the `POD` name, and `POD` namespace. So, for example, if you plan on sending data to a Kafka Topic, add some environment variables on the YAML of the Sidecar (see examples) for the `server`, `port` and `topic`. After that, make sure you read on the sysout-handler.
+I encourage you to read all the configuration from the environment. We are already doing it for the `POD` name, and `POD` namespace. So, for example, if you plan on sending data to a Kafka Topic, add some environment variables on the YAML of the Sidecar (see examples) for the `server`, `port` and `topic`. After that, make sure you read and test them on `sysout-handler.py`.
 
 4. **Exception**  
 There is pretty much no exception handling here. Make sure you test it well, and add propor exception handling to your cases.
