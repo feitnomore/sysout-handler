@@ -80,7 +80,8 @@ Add the sidecar to your POD. Under the `containers` specification, add the follw
       serviceAccountName: sysout-handler
 ```
 *Note:* Remember to set the `image` to the repository you used in the last step.  
-*Note:* Remember this will only work in `test` namespace.
+*Note:* Remember this will only work in `test` namespace.  
+*Note:* If you changed your code and need more environment variables, this is the place to add them.  
 
 
 ## REFERENCES AND IDEAS
