@@ -63,7 +63,7 @@ docker push $MY_REPO/sysout-handler:latest
 *Note:* Remember to set `MY_REPO`.
 
 ### Add the Sidecar to your Pod
-Add the sidecar to your POD:
+Add the sidecar to your POD. Under the `containers` specification, add the follwing `container`:
 ```
         - name: sysout-handler
           image: my_local_repository/sysout-handler:latest
