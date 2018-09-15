@@ -7,6 +7,6 @@ docker rmi sysout-handler --force
 docker build -t sysout-handler .
 
 # Pushing to remote repository
-export MY_REPO="registry-test.local.feitoza.com.br:80"
+export MY_REPO="my-local-registry:80"
 docker tag sysout-handler:latest $MY_REPO/sysout-handler:latest
 docker push $MY_REPO/sysout-handler:latest
