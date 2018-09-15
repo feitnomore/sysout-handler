@@ -1,5 +1,5 @@
         - name: sysout-handler
-          image: my-registry/sysout-handler:latest
+          image: my-local-registry:80/sysout-handler:latest
           imagePullPolicy: Always
           env:
             - name: POD_NAME
