@@ -3,7 +3,9 @@
 
 **Maintainers:** [feitnomore](https://github.com/feitnomore/)
 
-This is a hack to implement a sidecar container that will run within a Pod in [Kubernetes](https://kubernetes.io) and will read the sysout of the main POD's container.
+This is a hack to implement a sidecar container that will run within a Pod in [Kubernetes](https://kubernetes.io) and will read the sysout of the main Pod's container.
+
+This hack takes advantage of [Kubernetes Python Client](https://github.com/kubernetes-client/python) to find the name of the container that we'll be reading the sysout as well as to actually read the sysout from it.
 
 *WARNING:* Use it at your own risk.
 
