@@ -50,7 +50,7 @@ I encourage you to read all the configuration from the environment. We are alrea
 4. **Exception**  
 There is pretty much no exception handling here. Make sure you test it well, and add propor exception handling to your cases, specially if you are working with standardized outputs.
 
-5. **Dockerfile**
+5. **Dockerfile**  
 Make sure you edit `Dockerfile` according to your changes. If you add any libs, modules or files, make sure to add valid pip commands and copy commands on the `Dockerfile` so that your changes are saved on the image.
 
 ### Build the Image
